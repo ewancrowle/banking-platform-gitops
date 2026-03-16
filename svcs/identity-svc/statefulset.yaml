@@ -22,4 +22,4 @@ spec:
             - name: MACHINE_ID
               valueFrom:
                 fieldRef:
-                  fieldPath: metadata.labels["apps.kubernetes.io/pod-index"]
+                  fieldPath: metadata.labels['apps.kubernetes.io/pod-index']
