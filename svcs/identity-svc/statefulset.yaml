@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: identity-svc
+spec:
+  selector:
+    matchLabels:
+      app: identity-svc
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: identity-svc
+    spec:
+      containers:
+        - name: identity-svc
+          image: ghcr.io/ewancrowle/banking-platform-apps/identity-svc:latest
+          ports:
+            - containerPort: 8080
+              name: server
+          env:
+            - name: MACHINE_ID
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.labels["apps.kubernetes.io/pod-index"]
