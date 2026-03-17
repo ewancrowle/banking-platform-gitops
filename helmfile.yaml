@@ -12,7 +12,7 @@ releases:
     values:
       - secretAnnotations:
           replicator.v1.mittwald.de/replication-allowed: "true"
-          replicator.v1.mittwald.de/replication-allowed-namespaces: "svcs"
+          replicator.v1.mittwald.de/replication-allowed-namespaces: "platform"
 
   - name: kubernetes-replicator
     chart: mittwald/kubernetes-replicator
