@@ -25,7 +25,7 @@ spec:
               value: postgresql.postgresql.svc.cluster.local:5432
             - name: DB_NAME
               value: banking_platform
-            - name: DB_USER
+            - name: DB_USERNAME
               value: postgres
             - name: DB_PASSWORD
               valueFrom:
