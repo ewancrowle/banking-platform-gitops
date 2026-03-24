@@ -1,0 +1,14 @@
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+.idea/kubernetes/
+*.iws
+*.iml
+*.ipr
+
+### Certificates and Keys ###
+*.crt
+*.key
+*.pem

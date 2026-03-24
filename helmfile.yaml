@@ -5,6 +5,9 @@ repositories:
   - name: mittwald
     url: https://helm.mittwald.de
 
+  - name: sealed-secrets
+    url: https://bitnami-labs.github.io/sealed-secrets
+
 releases:
   - name: postgresql
     chart: bitnami/postgresql
@@ -16,3 +19,10 @@ releases:
 
   - name: kubernetes-replicator
     chart: mittwald/kubernetes-replicator
+
+  - name: sealed-secrets
+    chart: sealed-secrets/sealed-secrets
+    namespace: kube-system
+    set:
+      - name: fullnameOverride
+        value: sealed-secrets-controller
