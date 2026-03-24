@@ -20,6 +20,6 @@ spec:
               name: server
           env:
             - name: ACCOUNT_SERVICE_URL
-              value: account-svc.platform.svc.cluster.local:8080
+              value: http://account-svc.platform.svc.cluster.local:8080
             - name: AUTH_SERVICE_URL
-              value: oauth-svc.platform.svc.cluster.local:8080
+              value: http://oauth-svc.platform.svc.cluster.local:8080
