@@ -20,9 +20,9 @@ spec:
               name: server
           env:
             - name: IDENTITY_SERVICE_ADDR
-              value: http://identity-svc.platform.svc.cluster.local:8080
+              value: http://identity-svc:8080
             - name: ACCOUNT_SERVICE_ADDR
-              value: http://account-svc.platform.svc.cluster.local:8080
+              value: http://account-svc:8080
             - name: JWT_SECRET
               valueFrom:
                 secretKeyRef:
