@@ -4,9 +4,9 @@ metadata:
   name: api-server
 spec:
   selector:
-    app.kubernetes.io/name: account-svc
+    app.kubernetes.io/name: api-server
   ports:
     - name: server
       protocol: TCP
-      port: 8080
-      targetPort: 8080
+      port: 3000
+      targetPort: 3000
