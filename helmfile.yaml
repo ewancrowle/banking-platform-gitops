@@ -16,6 +16,8 @@ releases:
       - secretAnnotations:
           replicator.v1.mittwald.de/replication-allowed: "true"
           replicator.v1.mittwald.de/replication-allowed-namespaces: "platform"
+      - auth:
+          database: banking_platform
 
   - name: kubernetes-replicator
     chart: mittwald/kubernetes-replicator
