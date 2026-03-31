@@ -28,3 +28,10 @@ releases:
     set:
       - name: fullnameOverride
         value: sealed-secrets-controller
+
+  - name: clickhouse-operator
+    chart: oci://ghcr.io/clickhouse/clickhouse-operator-helm
+    namespace: clickhouse-operator-system
+    set:
+      - name: certManager.enable
+        value: false
