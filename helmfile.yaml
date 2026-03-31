@@ -8,6 +8,9 @@ repositories:
   - name: sealed-secrets
     url: https://bitnami-labs.github.io/sealed-secrets
 
+  - name: altinity
+    url: https://helm.altinity.com/
+
 releases:
   - name: cert-manager
     chart: oci://quay.io/jetstack/charts/cert-manager
@@ -35,3 +38,8 @@ releases:
     set:
       - name: fullnameOverride
         value: sealed-secrets-controller
+
+  - name: clickhouse
+    chart: altinity/clickhouse
+    namespace: clickhouse
+    disableValidationOnInstall: false
