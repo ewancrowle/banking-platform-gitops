@@ -25,7 +25,6 @@ spec:
     name: clickhouse-keeper-cluster
   settings:
     defaultUserPassword:
-      passwordType: password
       secret:
         name: clickhouse-password-secret
         key: password
