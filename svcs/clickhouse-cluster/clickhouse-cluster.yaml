@@ -1,7 +1,7 @@
 apiVersion: clickhouse.com/v1alpha1
 kind: KeeperCluster
 metadata:
-  name:  clickhouse-keeper-cluster
+  name: clickhouse-keeper-cluster
   namespace: clickhouse-cluster-system
 spec:
   replicas: 1
@@ -23,8 +23,3 @@ spec:
         storage: 1Gi
   keeperClusterRef:
     name: clickhouse-keeper-cluster
-  settings:
-    defaultUserPassword:
-      secret:
-        name: clickhouse-password-secret
-        key: password
