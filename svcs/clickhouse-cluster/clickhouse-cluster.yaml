@@ -1,4 +1,15 @@
 apiVersion: clickhouse.com/v1alpha1
+kind: KeeperCluster
+metadata:
+  name:  clickhouse-keeper-cluster
+spec:
+  replicas: 1
+  dataVolumeClaimSpec:
+    resources:
+      requests:
+        storage: 1Gi
+---
+apiVersion: clickhouse.com/v1alpha1
 kind: ClickHouseCluster
 metadata:
   name: clickhouse-cluster
@@ -9,6 +20,8 @@ spec:
     resources:
       requests:
         storage: 1Gi
+  keeperClusterRef:
+    name: clickhouse-keeper-cluster
   settings:
     defaultUserPassword:
       passwordType: password

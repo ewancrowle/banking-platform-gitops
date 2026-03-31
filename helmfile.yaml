@@ -9,6 +9,13 @@ repositories:
     url: https://bitnami-labs.github.io/sealed-secrets
 
 releases:
+  - name: cert-manager
+    chart: oci://quay.io/jetstack/charts/cert-manager
+    namespace: cert-manager
+    set:
+      - name: crds.enabled
+        value: true
+
   - name: postgresql
     chart: bitnami/postgresql
     namespace: postgresql
@@ -32,6 +39,3 @@ releases:
   - name: clickhouse-operator
     chart: oci://ghcr.io/clickhouse/clickhouse-operator-helm
     namespace: clickhouse-operator-system
-    set:
-      - name: certManager.enable
-        value: false
