@@ -55,3 +55,7 @@ releases:
         value: 1
       - name: config.cluster.auto_create_topics_enabled
         value: true
+      - name: tls.enabled
+        value: false
+      - name: external.service.enabled
+        value: false
