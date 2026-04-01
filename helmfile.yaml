@@ -11,6 +11,9 @@ repositories:
   - name: altinity
     url: https://helm.altinity.com/
 
+  - name: redpanda
+    url: https://charts.redpanda.com
+
 releases:
   - name: cert-manager
     chart: oci://quay.io/jetstack/charts/cert-manager
@@ -43,3 +46,12 @@ releases:
     chart: altinity/clickhouse
     namespace: clickhouse
     disableValidationOnInstall: false
+
+  - name: redpanda
+    chart: redpanda/redpanda
+    namespace: redpanda
+    set:
+      - name: statefulset.replicas
+        value: 1
+      - name: config.cluster.auto_create_topics_enabled
+        value: true
