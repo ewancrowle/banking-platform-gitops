@@ -24,4 +24,4 @@ spec:
             - name: CLICKHOUSE_URL
               value: clickhouse://chi-clickhouse-clickhouse-0-0.clickhouse.svc.cluster.local:9000/?sslmode=disable
             - name: CHDEBUG
-              value: 2
+              value: "2"
