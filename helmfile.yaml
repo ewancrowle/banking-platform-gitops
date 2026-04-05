@@ -46,6 +46,9 @@ releases:
     chart: altinity/clickhouse
     namespace: clickhouse
     disableValidationOnInstall: false
+    set:
+      - name: clickhouse.defaultUser.allowExternalAccess
+        value: true
 
   - name: redpanda
     chart: redpanda/redpanda
