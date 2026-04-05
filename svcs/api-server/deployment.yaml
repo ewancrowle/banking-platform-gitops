@@ -27,3 +27,5 @@ spec:
               value: http://payment-svc:8080
             - name: COP_SERVICE_URL
               value: http://confirmation-of-payee-svc:8080
+            - name: LEDGER_SERVICE_URL
+              value: http://ledger-svc:8080
