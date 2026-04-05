@@ -23,3 +23,7 @@ spec:
               value: http://account-svc:8080
             - name: AUTH_SERVICE_URL
               value: http://oauth-svc:8080
+            - name: PAYMENT_SERVICE_URL
+              value: http://payment-svc:8080
+            - name: COP_SERVICE_URL
+              value: http://confirmation-of-payee-svc:8080
