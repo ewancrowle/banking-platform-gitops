@@ -29,3 +29,5 @@ spec:
               value: http://confirmation-of-payee-svc:8080
             - name: LEDGER_SERVICE_URL
               value: http://ledger-svc:8080
+            - name: MERCHANT_SERVICE_URL
+              value: http://merchant-svc:8080
