@@ -27,7 +27,7 @@ spec:
               value: http://merchant-svc:8080
             - name: PAYMENT_DECISION_SERVICE_ADDR
               value: http://payment-decision-svc:8080
-            - name: COP_SERVICE_URL
+            - name: COP_SERVICE_ADDR
               value: http://confirmation-of-payee-svc:8080
             - name: DB_HOST
               value: postgresql.postgresql.svc.cluster.local:5432
