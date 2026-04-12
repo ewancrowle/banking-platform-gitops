@@ -34,3 +34,5 @@ spec:
                 secretKeyRef:
                   name: postgresql
                   key: postgres-password
+            - name: FRAUD_DETECTION_SERVICE_ADDR
+              value: http://fraud-detection-svc:8080
